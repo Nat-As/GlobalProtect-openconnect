@@ -42,7 +42,7 @@ Install [globalprotect-openconnect](https://aur.archlinux.org/packages/globalpro
 ### Build from source code
 
 ```sh
-git clone https://github.com/yuezk/GlobalProtect-openconnect.git
+git clone https://github.com/Nat-As/GlobalProtect-openconnect.git
 cd GlobalProtect-openconnect
 git submodule update --init
 
