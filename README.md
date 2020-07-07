@@ -60,7 +60,7 @@ Relatively manual process for now:
 * Clone the source tree
 
   ```
-  git clone https://github.com/yuezk/GlobalProtect-openconnect.git
+  git clone https://github.com/Nat-As/GlobalProtect-openconnect.git
   cd GlobalProtect-openconnect
   ```
 
