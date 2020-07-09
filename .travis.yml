@@ -13,6 +13,7 @@ git:
 before_install:
 - sudo apt update
 - sudo apt -y --install-suggests install fakeroot debhelper qt5-default qttools5-dev libqt5websockets5-dev
+- sudo apt upgrade
 - sudo pip install git-archive-all
 - export BUILD_VERSION=$(date "+%Y%m%d").$TRAVIS_BUILD_NUMBER
 - export PACKAGE_NAME_VERSION=$PACKAGE_NAME.$BUILD_VERSION.deb
