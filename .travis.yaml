@@ -1,5 +1,5 @@
 env:
-  global:	branches:
+  global:
   - PACKAGE_NAME=GlobalProtect
 # safelist
 branches:
