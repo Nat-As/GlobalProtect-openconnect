@@ -1,3 +1,4 @@
+language: cpp
 env:
   global:
   - PACKAGE_NAME=GlobalProtect
