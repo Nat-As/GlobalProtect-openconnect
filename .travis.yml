@@ -2,6 +2,7 @@ env:
   global:
   - PACKAGE_NAME=GlobalProtect
 # safelist
+dist: xenial
 branches:
   only:
   - master
