@@ -1,10 +1,9 @@
 language: cpp
 env:
   global:
-  - PACKAGE_NAME=GlobalProtect
+  - PACKAGE_NAME=globalprotect-openconnect_1.3.0
 # safelist
-dist: bionic
-language: minimal
+dist: xenial
 branches:
   only:
   - master
@@ -29,6 +28,8 @@ script:
 - tar -xzvf globalprotect-openconnect_1.3.0.orig.tar.gz
 - cd globalprotect-openconnect-1.3.0
 - fakeroot dpkg-buildpackage -uc -us -sa 2>&1 | tee ../build.log
+- ls
+- cd ..
 - ls
 # mv $PACKAGE_NAME.deb $PACKAGE_NAME_VERSION
 after_success:
