@@ -11,6 +11,7 @@ branches:
 git:
   depth: false
 before_install:
+- sudo add-apt-repository universe
 - sudo apt update
 - sudo apt -y --install-suggests install fakeroot debhelper qt5-default qttools5-dev libqt5websockets5-dev
 - sudo pip install git-archive-all
