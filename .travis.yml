@@ -3,7 +3,7 @@ env:
   global:
   - PACKAGE_NAME=GlobalProtect
 # safelist
-dist: xenial
+dist: bionic
 branches:
   only:
   - master
