@@ -14,6 +14,10 @@ A GlobalProtect VPN client (GUI) for Linux based on Openconnect and built with Q
 - Supports automatically selecting the preferred gateway from the multiple gateways.
 - Supports switching gateway from the system tray menu manually.
 
+## ToDo
+
+- Add SAML authentication support
+
 ## Prerequisites
 
 - Openconnect v8.x
