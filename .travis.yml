@@ -13,7 +13,7 @@ addons:
     update: true
     packages:
     - fakeroot
-    - debhelper
+#   - debhelper
     - qt5-default
     - qttools5-dev
     - libqt5websockets5-dev
@@ -24,6 +24,7 @@ git:
 
 before_install:
 - sudo pip install git-archive-all
+- sudo apt install -qq debhelper
 - export BUILD_VERSION=$(date "+%Y%m%d").$TRAVIS_BUILD_NUMBER
 - export PACKAGE_NAME_VERSION=$PACKAGE_NAME.$BUILD_VERSION.deb
 - sudo apt -q update
