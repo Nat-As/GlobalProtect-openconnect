@@ -3,21 +3,24 @@ env:
   global:
   - PACKAGE_NAME=globalprotect-openconnect_1.3.0
 # safelist
-dist: xenial
 branches:
   only:
   - master
+dist: xenial
+addons:
+  apt:
+    packages:
+    - fakeroot
+    - debhelper
+    - qt5-default
+    - qttools5-dev
+    - libqt5websockets5-dev
+
 # Recursive Cloning
 git:
   depth: false
+
 before_install:
-- sudo add-apt-repository universe
-- sudo apt update
-- sudo apt -y --install-suggests install fakeroot
-- sudo apt -y --install-suggests install debhelper
-- sudo apt -y --install-suggests install qt5-default
-- sudo apt -y --install-suggests install qttools5-dev
-- sudo apt -y --install-suggests install libqt5websockets5-dev
 - sudo pip install git-archive-all
 - export BUILD_VERSION=$(date "+%Y%m%d").$TRAVIS_BUILD_NUMBER
 - export PACKAGE_NAME_VERSION=$PACKAGE_NAME.$BUILD_VERSION.deb
